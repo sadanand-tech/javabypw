@@ -1,25 +1,14 @@
 package PatternPrinting;
 import java.util.Scanner;
-public class starPyramid {
+public class starDiamond {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter the no of square : ");
         int n = sc.nextInt();
-//        for (int i = 1; i <=n; i++) {
-//            for (int j = 1; j <=n-i; j++) {
-//                System.out.print(" "+" ");
-//
-//            }
-//            for (int j = 1; j <=2*i-1; j++) {
-//                System.out.print("*"+" ");
-//
-//            }
-//            System.out.println();
-//
-//        }
+
         int nsp = n-1,nst = 1;
         for (int i = 1; i <=n; i++) {
-            for (int j = 0; j <=nsp; j++) {
+            for (int j = 1; j <=nsp; j++) {
                 System.out.print(" "+" ");
 
             }
@@ -28,7 +17,22 @@ public class starPyramid {
 
             }
             nsp--;
-            nst +=2;
+            nst += 2;
+            System.out.println();
+
+        }
+        nsp = 1; nst = 2*n-3;
+        for (int i=1; i<=n-1; i++) { //line
+            for (int j=1; j<=nsp; j++) { //space
+                System.out.print(" "+" ");
+
+            }
+            for (int j=1; j<=nst; j++) {
+                System.out.print("*"+" ");
+
+            }
+            nsp++;
+            nst -=2;
             System.out.println();
 
         }
