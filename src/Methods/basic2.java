@@ -7,6 +7,7 @@ public class basic2 {
         multi();
         div();
         md();
+        addition();
     }
     public static void add(){
         int a=2,b=3;
@@ -33,6 +34,12 @@ public class basic2 {
         int c=a%b;
         System.out.println(c);
     }
+    public static void addition(){
+        int a=8,b=5,c=4;
+        int d=a+b+c;
+        System.out.println(d);
+    }
+
 
 
 
