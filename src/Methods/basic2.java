@@ -8,6 +8,7 @@ public class basic2 {
         div();
         md();
         addition();
+        mix();
     }
     public static void add(){
         int a=2,b=3;
@@ -39,6 +40,12 @@ public class basic2 {
         int d=a+b+c;
         System.out.println(d);
     }
+    public static void mix(){
+        int a=8,b=5,c=4;
+        int d=a+b*c;
+        System.out.println(d);
+    }
+
 
 
 
