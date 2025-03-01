@@ -5,8 +5,14 @@ public class LoopBasics {
         Scanner sc = new Scanner(System.in);
         System.out.print("enter n : ");
         int n = sc.nextInt();
+        int a=0;
+        int b=1;
+        int c=2;
         for (int i =1;i<=n;i++){
-            System.out.println("hello world");
+            System.out.println(a);
+            a=b;
+            b=c;
+
         }
 
 
